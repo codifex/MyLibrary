@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.28.0)
+    
+project(mylibrary LANGUAGES C VERSION 1.0.0 DESCRIPTION "MyLibrary description")
+
+add_library(
+    myprogram SHARED
+    mylib.h mylib.c
+)
+
+set_property(TARGET myprogram PROPERTY C_STANDARD 23)
+set_property(TARGET myprogram PROPERTY C_STANDARD_REQUIRED ON)
+set_property(TARGET myprogram PROPERTY C_EXTENSIONS OFF)
