@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.28.0)
-    
+
 project(mylibrary LANGUAGES C VERSION 1.0.0 DESCRIPTION "MyLibrary description")
 
 add_library(
-    mylibrary SHARED
+    mylibrary SHARED # creates .so, STATIC creates .a 
     mylib.h mylib.c
 )
 
