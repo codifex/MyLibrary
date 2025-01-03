@@ -5,5 +5,5 @@
 
 void mylib_greet()
 {
-    printf("Hello world from MyLibrary!\n");
+    printf("THIS IS Hello world from MyLibrary!\n");
 }
